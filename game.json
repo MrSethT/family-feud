@@ -3,48 +3,36 @@
   "questions": {
     "": [],
 
-    "Name a smell typically associated with Christmas": [
-      ["Evergreen", 45],
-      ["Cinnamon", 22],
-      ["Cookies", 15],
-      ["Turkey", 6],
-      ["Peppermint", 5],
-      ["Ham", 3],
-      ["Apples", 2]
+    "Name something every child wants for Christmas.": [
+      ["TOYS", 39],
+      ["BICYCLE", 35],
+      ["MONEY", 8],
+      ["PUPPY", 7],
+      ["VIDEO GAMES", 6],
+      ["PONY", 5]
     ],
 
-    "Name Something You’d Never Forget To Do On Christmas Day": [
-      ["Exchange Gifts", 39],
-      ["Eat", 20],
-      ["Wake Up", 14],
-      ["Cook", 12],
-      ["Sing", 4],
-      ["Go To Church", 3],
-      ["Say Merry Christmas", 3]
+    "We All Know The Grinch Stole Christmas. Name Another Holiday He Might Want To Steal.": [
+      ["THANKSGIVING", 52],
+      ["EASTER", 26],
+      ["VALENTINES", 9],
+      ["HALLOWEEN", 9],
+      ["FOURTH OF JULY", 4]
     ],
-    
-    "What Christmas Gift Can You Give Someone, Without Going Shopping?": [
-      ["Money", 37],
-      ["Love", 20],
-      ["Baked Goods", 13],
-      ["Card", 11],
-      ["Gift card", 8],
-      ["Hugs/Kiss", 8]
+
+    "Name someone for whom you feel forced to buy a Christmas gift.": [
+      ["IN-LAWS", 23],
+      ["PARENTS", 14],
+      ["BOSS", 14],
+      ["SIBLINGS", 9],
+      ["CO-WORKERS", 7]
     ],
-    
-    "Other Than 'Christmas', Name A Word That’s In Almost Every Christmas Song": [
-      ["Merry", 39],
-      ["Santa", 22],
-      ["Snow", 17],
-      ["Bells", 9],
-      ["Holiday", 6]
-    ],
-    
-    "Name Some Activities People Do On Christmas That They Don’t Do On Other Holidays?": [
-      ["Exchange Gifts", 42],
-      ["Sing", 30],
-      ["Go To Church", 22],
-      ["Decorate", 4]
+
+    "Name A Kind Of Tree That Would Look Silly To Have As A Christmas Tree.": [
+      ["OAK TREE", 48],
+      ["PALM TREE", 32],
+      ["MAPLE TREE", 13],
+      ["FRUIT TREE", 5]
     ],
 
     "-": []
