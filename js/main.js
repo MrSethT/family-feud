@@ -266,7 +266,7 @@ var app = {
   },
   // run this code on fued site to copy+format a question
   magic: function(){
-    '       "' +  document.getElementsByClassName('content')[0].firstElementChild.innerHTML + '" : [' +  Array.from(  document.getElementsByClassName('answers')[0].getElementsByTagName('tr')).map(element=> '["' + element.getElementsByTagName('th')[0].innerText + '", ' + element.getElementsByTagName('td')[1].innerText + ']').join(',') + '     ';
+    navigator.clipboard.writeText('       "' +  document.getElementsByClassName('content')[0].firstElementChild.innerHTML + '" : [' +  Array.from(  document.getElementsByClassName('answers')[0].getElementsByTagName('tr')).map(element=> '["' + element.getElementsByTagName('th')[0].innerText + '", ' + element.getElementsByTagName('td')[1].innerText + ']').join(',') + '    ], ');
   }
 
 };

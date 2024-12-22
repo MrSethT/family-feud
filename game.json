@@ -34,7 +34,13 @@
       ["MAPLE TREE", 13],
       ["FRUIT TREE", 5]
     ],
-
+    "Name Some Activities People Do On Christmas That They Don’t Do On Other Holidays?": [
+      ["EXCHANGE GIFTS", 42],
+      ["SING", 30],
+      ["GO TO CHURCH", 22],
+      ["DECORATE", 4]
+    ],
+    
     "-": []
   }
 }
