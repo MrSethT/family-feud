@@ -5,34 +5,34 @@ var app = {
   jsonFile: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/40041/FF3.json",
   board: $(
     "<div class='gameBoard'>" +
-    "<!--- Scores --->" +
-    "<div class='score' id='boardScore'>0</div>" +
-    "<div class='score' id='team1' >0</div>" +
-    "<div class='score' id='team2' >0</div>" +
-    "<!--- Question --->" +
-    "<div class='questionHolder'>" +
-    "<span class='question'></span>" +
-    "</div>" +
-    "<!--- Answers --->" +
-    "<div class='colHolder'>" +
-    "<div class='col1'></div>" +
-    "<div class='col2'></div>" +
-    "</div>" +
-    "<!--- Buttons --->" +
-    "<div class='btnHolder'>" +
-    "<div id='awardTeam1' data-team='1' class='button'>Award Team 1</div>" +
-    "<div id='newQuestion' class='button'>New Question</div>" +
-    "<div id='awardTeam2' data-team='2'class='button'>Award Team 2</div>" +
-    "</div>" +
-    "<!--- XXX --->" +
-    "<div class='XXX'>" +
-    "<span class='X1 blinking'>❌</span>" +
-    "<span class='X2 blinking'>❌</span>" +
-    "<span class='X3 blinking'>❌</span>" +
-    "</div >" +
-    "</div>" +
-    "<div class='print'>" +
-    "</div>"
+      "<!--- Scores --->" +
+      "<div class='score' id='boardScore'>0</div>" +
+      "<div class='score' id='team1' >0</div>" +
+      "<div class='score' id='team2' >0</div>" +
+      "<!--- Question --->" +
+      "<div class='questionHolder'>" +
+      "<span class='question'></span>" +
+      "</div>" +
+      "<!--- Answers --->" +
+      "<div class='colHolder'>" +
+      "<div class='col1'></div>" +
+      "<div class='col2'></div>" +
+      "</div>" +
+      "<!--- Buttons --->" +
+      "<div class='btnHolder'>" +
+      "<div id='awardTeam1' data-team='1' class='button'>Award Team 1</div>" +
+      "<div id='newQuestion' class='button'>New Question</div>" +
+      "<div id='awardTeam2' data-team='2'class='button'>Award Team 2</div>" +
+      "</div>" +
+      "<!--- XXX --->" +
+      "<div class='XXX'>" +
+      "<span class='X1 blinking'>❌</span>" +
+      "<span class='X2 blinking'>❌</span>" +
+      "<span class='X3 blinking'>❌</span>" +
+      "</div >" +
+      "</div>" +
+      "<div class='print'>" +
+      "</div>"
   ),
   // Utility functions
   shuffle: function (array) {
@@ -56,14 +56,13 @@ var app = {
     app.makeQuestion(app.currentQ);
     $("body").append(app.board);
     app.makePrint();
-
   },
   makePrint: function () {
-    app.questions.forEach(question => {
+    app.questions.forEach((question) => {
       var insert = "";
       insert += `<p>${question}</p><ol>`;
 
-      app.allData[question].forEach(qAnswr => {
+      app.allData[question].forEach((qAnswr) => {
         insert += `<li>${qAnswr[0]}</li>`;
       });
 
@@ -93,29 +92,39 @@ var app = {
     col1.empty();
     col2.empty();
 
+    var thisACount = qAnswr.filter((arr) => arr[0].length > 0).length;
+
     for (var i = 0; i < aCount; i++) {
       var aLI;
       if (qAnswr[i]) {
+        var value = qAnswr[i][1];
+        if (!value) {
+          value = parseInt(
+            (100 / app.addDownTotal(thisACount)) * (thisACount - i)
+          );
+        }
         aLI = $(
           "<div class='cardHolder cardHolder" +
-          (i + 1) +
-          "'>" +
-          "<div class='card'>" +
-          "<div class='front'>" +
-          "<span class='DBG'>" +
-          (i + 1) +
-          "</span>" +
-          "</div>" +
-          "<div class='back DBG'>" +
-          "<span>" +
-          qAnswr[i][0] +
-          "</span>" +
-          "<b class='LBG' data-value='"+(qAnswr[i][1] * qNum)+"'>" +
-          (qAnswr[i][1]) +
-          "</b>" +
-          "</div>" +
-          "</div>" +
-          "</div>"
+            (i + 1) +
+            "'>" +
+            "<div class='card'>" +
+            "<div class='front'>" +
+            "<span class='DBG'>" +
+            (i + 1) +
+            "</span>" +
+            "</div>" +
+            "<div class='back DBG'>" +
+            "<span>" +
+            qAnswr[i][0].toUpperCase() +
+            "</span>" +
+            "<b class='LBG' data-value='" +
+            value * qNum +
+            "'>" +
+            value +
+            "</b>" +
+            "</div>" +
+            "</div>" +
+            "</div>"
         );
       } else {
         aLI = $("<div class='cardHolder empty'><div></div></div>");
@@ -152,6 +161,13 @@ var app = {
     }
     cardHolders.on("click", showCard);
   },
+  addDownTotal: function (input) {
+    var ret = 0;
+    for (var i = input; i > 0; i--) {
+      ret += i;
+    }
+    return ret;
+  },
   getBoardScore: function () {
     var cards = app.board.find(".card");
     var boardScore = app.board.find("#boardScore");
@@ -159,9 +175,7 @@ var app = {
     var score = 0;
     function tallyScore() {
       if ($(this).data("flipped")) {
-        var value = $(this)
-          .find("b")
-          .data("value");
+        var value = $(this).find("b").data("value");
         score += parseInt(value);
       }
     }
@@ -171,7 +185,7 @@ var app = {
       onUpdate: function () {
         boardScore.html(Math.round(currentScore.var));
       },
-      ease: Power3.easeOut
+      ease: Power3.easeOut,
     });
   },
   awardPoints: function (num) {
@@ -186,7 +200,7 @@ var app = {
       onUpdate: function () {
         team.html(Math.round(teamScore.var));
       },
-      ease: Power3.easeOut
+      ease: Power3.easeOut,
     });
 
     TweenMax.to(currentScore, 1, {
@@ -194,22 +208,16 @@ var app = {
       onUpdate: function () {
         boardScore.html(Math.round(currentScore.var));
       },
-      ease: Power3.easeOut
+      ease: Power3.easeOut,
     });
   },
   changeQuestion: function () {
     app.currentQ++;
     app.makeQuestion(app.currentQ);
   },
-  buzz: new Audio(
-    "sounds/buzz.mp3"
-  ),
-  ding: new Audio(
-    "sounds/ding.mp3"
-  ),
-  theme: new Audio(
-    "sounds/theme.mp3"
-  ),
+  buzz: new Audio("sounds/buzz.mp3"),
+  ding: new Audio("sounds/ding.mp3"),
+  theme: new Audio("sounds/theme.mp3"),
 
   keypress: function (e) {
     console.log(e.which);
@@ -241,8 +249,7 @@ var app = {
     } else if (e.which === 84) {
       //T
       app.theme.pause();
-    }
-    else if (e.which === 114) {
+    } else if (e.which === 114) {
       //r
       app.xCount = 0;
     }
@@ -260,15 +267,32 @@ var app = {
       .then(function (data) {
         app.questions = data.questions;
         app.jsonLoaded(app.questions);
-
       });
-
   },
   // run this code on fued site to copy+format a question
-  magic: function(){
-    navigator.clipboard.writeText('       "' +  document.getElementsByClassName('content')[0].firstElementChild.innerHTML + '" : [' +  Array.from(  document.getElementsByClassName('answers')[0].getElementsByTagName('tr')).map(element=> '["' + element.getElementsByTagName('th')[0].innerText + '", ' + element.getElementsByTagName('td')[1].innerText + ']').join(',') + '    ], ');
-  }
-
+  magic: function () {
+    navigator.clipboard.writeText(
+      '       "' +
+        document.getElementsByClassName("content")[0].firstElementChild
+          .innerHTML +
+        '" : [' +
+        Array.from(
+          document
+            .getElementsByClassName("answers")[0]
+            .getElementsByTagName("tr")
+        )
+          .map(
+            (element) =>
+              '["' +
+              element.getElementsByTagName("th")[0].innerText +
+              '", ' +
+              element.getElementsByTagName("td")[1].innerText +
+              "]"
+          )
+          .join(",") +
+        "    ], "
+    );
+  },
 };
 app.init();
 //http://www.qwizx.com/gssfx/usa/ff.htm

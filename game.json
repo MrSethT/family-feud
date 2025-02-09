@@ -3,42 +3,53 @@
   "questions": {
     "": [],
 
-    "Name something every child wants for Christmas.": [
-      ["TOYS", 39],
-      ["BICYCLE", 35],
-      ["MONEY", 8],
-      ["PUPPY", 7],
-      ["VIDEO GAMES", 6],
-      ["PONY", 5]
+    "Name Something Teenagers Stress Out About.": [
+      ["SCHOOL", 38],
+      ["ACNE/LOOKS", 23],
+      ["DATING", 17],
+      ["FRIENDS/CLIQUE", 14],
+      ["PARENTS/RULES", 6]
     ],
 
-    "We All Know The Grinch Stole Christmas. Name Another Holiday He Might Want To Steal.": [
-      ["THANKSGIVING", 52],
-      ["EASTER", 26],
-      ["VALENTINES", 9],
-      ["HALLOWEEN", 9],
-      ["FOURTH OF JULY", 4]
+    "Tell me someone you might spend Valentines Day with when you are not in a relationship.": [
+      ["FRIENDS", 53],
+      ["PARENTS", 27],
+      ["CHILDREN", 15],
+      ["PET", 5]
     ],
 
-    "Name someone for whom you feel forced to buy a Christmas gift.": [
-      ["IN-LAWS", 23],
-      ["PARENTS", 14],
-      ["BOSS", 14],
-      ["SIBLINGS", 9],
-      ["CO-WORKERS", 7]
+    "Name someone from the Bible whose name begins with the letter M.": [
+      ["MOSES", 45],
+      ["MATTHEW", 20],
+      ["MARK", 10],
+      ["MARY", 9],
+      ["MALACHI", 3]
     ],
 
-    "Name A Kind Of Tree That Would Look Silly To Have As A Christmas Tree.": [
-      ["OAK TREE", 48],
-      ["PALM TREE", 32],
-      ["MAPLE TREE", 13],
-      ["FRUIT TREE", 5]
+    "Name Something You Might Eat For Breakfast In The Car On Your Way To Work.": [
+      ["DONUT", 25],
+      ["BAGEL", 19],
+      ["GRANOLA BAR", 18],
+      ["TOAST", 10],
+      ["POP TART", 9],
+      ["MUFFIN", 7],
+      ["FRUIT", 4]
     ],
-    "Name Some Activities People Do On Christmas That They Don’t Do On Other Holidays?": [
-      ["EXCHANGE GIFTS", 42],
-      ["SING", 30],
-      ["GO TO CHURCH", 22],
-      ["DECORATE", 4]
+
+    "Name A people group in order from today's lesson.": [
+      ["THE Pharissees"],
+      ["THE WOMAN"],
+      ["JESUS"],
+      ["JESUS"]
+    ],
+
+    "What would the world's least romantic husband give to his wife for Valentine's Day?": [
+      ["NOTHING", 23],
+      ["VACUUM CLEANER", 22],
+      ["CARD", 16],
+      ["CASH", 14],
+      ["LARGE APPLIANCE", 11],
+      ["TOOLS", 5]
     ],
     
     "-": []
