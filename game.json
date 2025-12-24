@@ -3,55 +3,56 @@
   "questions": {
     "": [],
 
-    "Name Something Teenagers Stress Out About.": [
-      ["SCHOOL", 38],
-      ["ACNE/LOOKS", 23],
-      ["DATING", 17],
-      ["FRIENDS/CLIQUE", 14],
-      ["PARENTS/RULES", 6]
+    "Name something a parent might try to convince their child to try in the summer.": [
+      ["SWIMMING", 47],
+      ["CAMPING", 23],
+      ["SPORTS", 13],
+      ["READING", 9],
+      ["WORKING", 8]
     ],
 
-    "Tell me someone you might spend Valentines Day with when you are not in a relationship.": [
-      ["FRIENDS", 53],
-      ["PARENTS", 27],
-      ["CHILDREN", 15],
-      ["PET", 5]
+    "Name something people hate to find in their house.": [
+      ["BUGS", 59],
+      ["MICE", 26],
+      ["BURGLAR", 4],
+      ["DIRT", 3],
+      ["TRASH", 2],
+      ["ANIMAL DROPPINGS", 2]
     ],
 
-    "Name someone from the Bible whose name begins with the letter M.": [
-      ["MOSES", 45],
-      ["MATTHEW", 20],
-      ["MARK", 10],
-      ["MARY", 9],
-      ["MALACHI", 3]
+    "Name a wild animal that you'd be foolish to keep as a pet.": [
+      ["TIGER", 27],
+      ["LION", 18],
+      ["BEAR", 10],
+      ["WOLF", 7],
+      ["SKUNK", 5],
+      ["ALLIGATOR", 4]
     ],
 
-    "Name Something You Might Eat For Breakfast In The Car On Your Way To Work.": [
-      ["DONUT", 25],
-      ["BAGEL", 19],
-      ["GRANOLA BAR", 18],
-      ["TOAST", 10],
-      ["POP TART", 9],
-      ["MUFFIN", 7],
-      ["FRUIT", 4]
+    "Name something high school students have nightmares about.": [
+      ["TESTS", 62],
+      ["GRADUATING", 7],
+      ["HOMEWORK", 5],
+      ["PEER PRESSURE", 5],
+      ["GOING TO COLLEGE", 4]
     ],
 
-    "Name A people group in order from today's lesson.": [
-      ["THE Pharissees"],
-      ["THE WOMAN"],
-      ["JESUS"],
-      ["JESUS"]
+    "Name the top 6 traits of a true church in order they were listed today.": [
+      ["ChristCentered"],
+      ["2 CHurch offices"],
+      ["2 church ordinances"],
+      ["Self governing"],
+      ["Only saved people"],
+      ["The Bible is the guide"]
     ],
 
-    "What would the world's least romantic husband give to his wife for Valentine's Day?": [
-      ["NOTHING", 23],
-      ["VACUUM CLEANER", 22],
-      ["CARD", 16],
-      ["CASH", 14],
-      ["LARGE APPLIANCE", 11],
-      ["TOOLS", 5]
+    "Name Something A Student Might Forget To Bring To School.": [
+      ["HOMEWORK", 35],
+      ["BOOKS", 17],
+      ["LUNCH", 13],
+      ["PEN", 12]
     ],
-    
+
     "-": []
   }
 }
