@@ -13,8 +13,10 @@ The game is built as a board of survey responses with a set of clues and answers
 - The game board shows a blank for each answer in the survey
 - Clicking on the answer or pressing the corresponding number key shows the answer
 - Each answer has a point value associated with it
+- If the answer given is not on the list or possible answers, press **X** to indicate the answer given is incorrect
+- The player/team turn is over if they get three Xs
 - Each round uses a point multiplier that increases with each round
-- At the end of each round, the money is awarded to the winning team unsing the point corresponding Award button
+- At the end of each round, the money is awarded to the winning team using the point corresponding Award button
 - The next round starts when the host clicks the "New Question" button
 - The game is over when all the surveys are completed and the winner is determined by wich player/team has the most money 
 - The host should print the game board and clues to paper for easy reference during the game before hand
@@ -27,7 +29,7 @@ The game is built as a board of survey responses with a set of clues and answers
 - **Shift+T** – Stops the theme music  
 - **Number Keys 1-8** – Show the corresponding answer  
 - **X** – Indicate the answer given is incorrect  
-- **R** – Reset the X count
+- **R** – Reset the X count to transition from the showdown to "play"
 - Minimal on-screen interaction/clicks — the game is intended to be run quickly by a host
 
 ---
@@ -42,6 +44,7 @@ The Board
 ## 🔍 Clue Generation Sources
 
 [Family Feud Survey Databse](https://www.familyfeudinfo.com/sitemap.php")
+Use the main.js magic function on this site to copy paste the survey data into the game.json file format
 
 ---
 
@@ -96,7 +99,7 @@ A **question** represents one survey set of the top answers with their point val
 An **answer** represents a single survey response with its point value.
 
 ```json
-["ANSWER TEXT", POINT VALUE]
+["ANSWER TEXT", POINT-VALUE]
 
 ```
 
