@@ -2,31 +2,28 @@
   "lookAHere": "https://www.familyfeudinfo.com/sitemap.php",
   "questions": {
     "": [],
-
-    "Name something a parent might try to convince their child to try in the summer.": [
-      ["SWIMMING", 47],
-      ["CAMPING", 23],
-      ["SPORTS", 13],
-      ["READING", 9],
-      ["WORKING", 8]
+    
+    "Give Me A Word That Rhymes With “Sound”.": [
+      ["FOUND", 30],
+      ["ROUND", 30],
+      ["POUND", 12],
+      ["GROUND", 7],
+      ["HOUND", 7],
+      ["BOUND", 7]
+    ],
+    
+    "Name the temptations of Christ in order.": [
+      ["Physical Needs 🍞"],
+      ["Pride, Fame and fortune 🤩"],
+      ["Power 💪"]
     ],
 
-    "Name something people hate to find in their house.": [
-      ["BUGS", 59],
-      ["MICE", 26],
-      ["BURGLAR", 4],
-      ["DIRT", 3],
-      ["TRASH", 2],
-      ["ANIMAL DROPPINGS", 2]
-    ],
-
-    "Name a wild animal that you'd be foolish to keep as a pet.": [
-      ["TIGER", 27],
-      ["LION", 18],
-      ["BEAR", 10],
-      ["WOLF", 7],
-      ["SKUNK", 5],
-      ["ALLIGATOR", 4]
+    "Name An Event Where You Wouldn’t Want To Be The Center Of Attention.": [
+      ["FUNERAL", 33],
+      ["TRIAL/INVESTIGATION", 24],
+      ["BULLFIGHT/SPORT", 20],
+      ["WEDDING", 13],
+      ["EXECUTION", 10]
     ],
 
     "Name something high school students have nightmares about.": [
@@ -37,21 +34,19 @@
       ["GOING TO COLLEGE", 4]
     ],
 
-    "Name the top 6 traits of a true church in order they were listed today.": [
-      ["ChristCentered"],
-      ["2 CHurch offices"],
-      ["2 church ordinances"],
-      ["Self governing"],
-      ["Only saved people"],
-      ["The Bible is the guide"]
+    "Name a kind of place where parents are embarrassed by their misbehaving children.": [
+      ["STORE/MARKET", 40],
+      ["RESTAURANT", 24],
+      ["CHURCH", 19],
+      ["SCHOOL/DAY CARE", 4]
     ],
 
-    "Name Something A Student Might Forget To Bring To School.": [
-      ["HOMEWORK", 35],
-      ["BOOKS", 17],
-      ["LUNCH", 13],
-      ["PEN", 12]
+    "Besides A Toothbrush, Name Something People Use To Clean Their Teeth.": [
+      ["DENTAL FLOSS", 48],
+      ["TOOTH PASTE", 32],
+      ["TOOTH PICKS", 16]
     ],
+
 
     "-": []
   }
